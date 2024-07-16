@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://tristripe.github.io/logs-recorder/",
   "scripts": {
     "start": "webpack serve --env port=3001",
     "build:prod": "webpack --env mode=production",
