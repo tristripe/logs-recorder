@@ -35,6 +35,7 @@ class ErrorBoundary
         if (hasError) {
             // You can render any custom fallback UI
             return (
+            // @ts-ignore
                 <Suspense fallback={Loader}>
                     <ErrorComponent />
                 </Suspense>

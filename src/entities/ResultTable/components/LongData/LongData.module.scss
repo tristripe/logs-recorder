@@ -1,0 +1,43 @@
+.longDataWrapper {
+    display: flex;
+    column-gap: 16px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.longData {
+    text-overflow: ellipsis;
+    display: box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn {
+    background: #6a41b2;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    height: 38px;
+    border: none;
+    appearance: none;
+    box-shadow: none;
+    color: white;
+    cursor: pointer;
+    min-width: 120px;
+    max-width: 300px;
+    width: 100%;
+
+    &:disabled {
+        cursor: auto;
+        opacity: 0.8;
+    }
+}

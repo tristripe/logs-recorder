@@ -1,0 +1,86 @@
+export const MOCK_DATA = {
+    success: true,
+    errorList: [],
+    recordsTotal: 6,
+    exchanges: [
+        {
+            id: 'f19a68c5-a023-3431-21da-a46a2c9f3b72',
+            appName: 'kak2c-core-routine',
+            appUserName: 'sreztsov@samokat.ru',
+            name: 'wms_/order',
+            externalDate: '2024-06-26T13:02:17.795',
+            externalId: '',
+            externalTrackingId: '9696656179893',
+            request:
+                'POST https://wms-prod-vnk.kak2c.ru/merchant-api/orderContent-Type: application/jsonAuthorization: Bearer bA3xmAQhwcq4{"ad_attachments":[],"custom_data":"{\\"dlv_custom_data\\":\\"{\\\\\\"deliveryId\\\\\\":\\\\\\"9696647056521\\\\\\",\\\\\\"address\\\\\\":\\\\\\"Красноярск, улица Апрельская, 5и, кв. 246\\\\\\",\\\\\\"MMOrderType\\\\\\":\\\\\\"Darkstore\\\\\\",\\\\\\"merchantId\\\\\\":\\\\\\"101501\\\\\\",\\\\\\"warehouseId\\\\\\":\\\\\\"CACTUS_1\\\\\\",\\\\\\"merchantName\\\\\\":\\\\\\"Общество с ограниченной ответственностью \\\\\\\\\\\\\\"УМНЫЙ РИТЕЙЛ\\\\\\\\\\\\\\"\\\\\\"}\\"}","date":"2024-06-26T16:02:15.694000","delivery":{"address":{"block":"","building":"","city":"Красноярск","city_fias":"9b968c73-f4d4-4012-8da8-3dacd4d4c1bd","country":"RU","flat":"246","full_address":"Красноярск, улица Апрельская, 5и, кв. 246","house":"5и","region":"Красноярский","region_fias":"db9c4f8b-b706-40e2-b2b4-d31b98dcd3d1","street":"ул Апрельская","zip":"660050"},"contract_code":"CSE_DARKSTORE","delivery_date_plan":"2024-07-03","delivery_services":[],"delivery_time_plan_from":"09:00:00.000000","delivery_time_plan_to":"18:00:00.000000","price_data":{"currency":"RUB","price":0.00,"vat":"NO_VAT"}},"external_id":"9696656179893","files":[],"items":[{"customData":"{\\"marketplace_sku_id\\":\\"1\\"}","insurance":1081.00,"price_data":{"currency":"RUB","price":1081.00,"vat":"VAT_20"},"quantity":1,"sku_human_id":"00-000000043260"}],"packing_type":"MIX_PACKINGS","payment_type":"ONLINE","receiver":{"name":"Даркстор Самокат","phone":"+78005050015"},"shipping_date_plan":"2024-06-26T16:02:15.818000","sku_condition":"GOOD","type":"B2C"}',
+            response:
+                '{"dlv_id":"03ca31da-8e46-4c49-9a99-138793a72d27","errors":[],"id":"O-AED-9696656179893","success":true}',
+            duration: 552,
+        },
+        {
+            id: '4f0cb3aa-1a67-c386-c773-4f85c0ea4da5',
+            appName: 'kak2c-core-routine',
+            appUserName: 'sreztsov@samokat.ru',
+            name: 'mm_/mcssCore/order/confirm',
+            externalDate: '2024-06-26T13:03:18.213',
+            externalId: '',
+            externalTrackingId: '9696656179893',
+            request:
+                'POST https://apint.megamarket.tech/api/market/v1/mcssCore/order/confirmContent-Type: application/jsonAuthorization: Basic dGVtcG9saW5lOlB1cXVpZXF1dThwZWlo{"data":{"shipments":[{"items":[{"itemIndex":1,"offerId":"00-000000043260"}],"orderCode":"9696656179893","shipmentId":"9696656179893"}]},"meta":{"_source":"kaktus-service"}}',
+            response: '{"success":1,"meta":{"_requestId":"cpu135j59fm9us9hl5qg"},"data":{}}',
+            duration: 39,
+        },
+        {
+            id: '886cfabf-be4d-dcdd-264e-d00d023f8abd',
+            appName: 'kak2c-core-routine',
+            appUserName: 'sreztsov@samokat.ru',
+            name: 'mm_/mcssCore/order/packing',
+            externalDate: '2024-06-26T13:56:39.460',
+            externalId: '',
+            externalTrackingId: '9696656179893',
+            request:
+                'POST https://apint.megamarket.tech/api/market/v1/mcssCore/order/packingContent-Type: application/jsonAuthorization: Basic dGVtcG9saW5lOlB1cXVpZXF1dThwZWlo{"data":{"finalize":1,"shipments":[{"items":[{"boxes":[{"boxCode":"125201000000010969","boxIndex":1,"params":[{"isKgt":false}]}],"itemIndex":1,"quantity":1}],"orderCode":"9696656179893","shipmentId":"9696656179893"}]},"meta":{"_source":"kaktus-service"}}',
+            response: '{"success":1,"meta":{"_requestId":"cpu1s5rsr8lpjsqbf640"},"data":{}}',
+            duration: 65,
+        },
+        {
+            id: '359a6fe7-c000-abd7-0aa3-69d0d6185b04',
+            appName: 'kak2c-core-routine',
+            appUserName: 'sreztsov@samokat.ru',
+            name: 'mm_/mcssCore/order/shipping',
+            externalDate: '2024-06-26T17:32:27.897',
+            externalId: '',
+            externalTrackingId: '9696656179893',
+            request:
+                'POST https://apint.megamarket.tech/api/market/v1/mcssCore/order/shippingContent-Type: application/jsonAuthorization: Basic dGVtcG9saW5lOlB1cXVpZXF1dThwZWlo{"data":{"shipments":[{"boxes":[{"boxCode":"125201000000010969","boxIndex":1}],"shipmentId":"9696656179893","shipping":{"shippingDate":"2024-06-26T20:32:03+03:00"}}]},"meta":{"_source":"kaktus-service"}}',
+            response: '{"success":1,"meta":{"_requestId":"cpu51ar59fm9us9iccog"},"data":{}}',
+            duration: 40,
+        },
+        {
+            id: 'ba79c6e8-d550-8458-5c1e-4764374e571c',
+            appName: 'kak2c-core-routine',
+            appUserName: 'sreztsov@samokat.ru',
+            name: 'mm_/tc/v1/tracking',
+            externalDate: '2024-06-27T02:51:46.089',
+            externalId: '',
+            externalTrackingId: '9696656179893',
+            request:
+                'POST https://csm.sblogistica.ru/tc/v1/trackingContent-Type: application/jsonX-AUTH-TOKEN: jDk4q1rzxigxDmopDRAJMbYivOoXFzTm{"eventTime":"2024-06-27T05:50:23+03:00","sla":0,"statusCode":"on_delivery","trackingNumber":"efec2cf7-4339-8db2-651a-6a1c360d8bc7"}',
+            response: '{"statusCode":200}',
+            duration: 57,
+        },
+        {
+            id: 'b7700d26-3938-0da3-73f6-326d20be1dda',
+            appName: 'kak2c-core-routine',
+            appUserName: 'sreztsov@samokat.ru',
+            name: 'mm_/tc/v1/tracking',
+            externalDate: '2024-07-03T06:44:36.695',
+            externalId: '',
+            externalTrackingId: '9696656179893',
+            request:
+                'POST https://csm.sblogistica.ru/tc/v1/trackingContent-Type: application/jsonX-AUTH-TOKEN: jDk4q1rzxigxDmopDRAJMbYivOoXFzTm{"eventTime":"2024-07-03T09:44:03+03:00","sla":0,"statusCode":"delivered","trackingNumber":"efec2cf7-4339-8db2-651a-6a1c360d8bc7"}',
+            response: '{"statusCode":200}',
+            duration: 283,
+        },
+    ],
+};

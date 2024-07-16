@@ -1,3 +1,5 @@
+@import "./themes/dark";
+@import "./themes/light";
 @import "reset";
 @import "variables/global";
 
@@ -15,9 +17,11 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .page-wrapper {
     flex-grow: 1;
-    padding: 20px;
 }

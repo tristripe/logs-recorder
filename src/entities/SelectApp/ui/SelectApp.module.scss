@@ -1,0 +1,24 @@
+.selectApp {
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    gap: 32px;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+}
+
+.selectAppLabel {
+    font-size: 16px;
+}
+
+.innerSelectLabel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6e768e;
+    padding-bottom: 8px;
+    display: block;
+}

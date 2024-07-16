@@ -1,31 +1,46 @@
 import { RouteProps } from 'react-router-dom';
 import { MainPage } from '@pages/MainPage';
-import { AboutPage } from '@pages/AboutPage';
 import { NotFoundPage } from '@pages/NotFoundPage';
+import { AuthPage } from '@pages/AuthPage';
 
-export enum AppRoutes {
-  MAIN = 'main',
-  ABOUT = 'about',
-    NOT_FOUND = 'not_found'
+export enum PublicAppRoutes {
+    AUTH_PAGE = 'auth_page',
+    NOT_FOUND = 'not_found',
 }
 
-export const RoutePath: Record<AppRoutes, string> = {
-    [AppRoutes.MAIN]: '/',
-    [AppRoutes.ABOUT]: '/about',
-    [AppRoutes.NOT_FOUND]: '*',
+export enum PrivateAppRoutes {
+    MAIN = 'main',
+    NOT_FOUND = 'not_found',
+}
+
+export const PublicRoutePath: Record<PublicAppRoutes, string> = {
+    [PublicAppRoutes.AUTH_PAGE]: '/',
+    [PublicAppRoutes.NOT_FOUND]: '*',
 };
 
-export const routeConfig: Record<AppRoutes, RouteProps> = {
-    [AppRoutes.MAIN]: {
-        path: RoutePath.main,
+export const PrivateRoutePath: Record<PrivateAppRoutes, string> = {
+    [PrivateAppRoutes.MAIN]: '/',
+    [PrivateAppRoutes.NOT_FOUND]: '*',
+};
+
+export const publicRouteConfig: Record<PublicAppRoutes, RouteProps> = {
+    [PublicAppRoutes.NOT_FOUND]: {
+        path: PublicRoutePath.not_found,
+        element: <NotFoundPage />,
+    },
+    [PublicAppRoutes.AUTH_PAGE]: {
+        path: PublicRoutePath.auth_page,
+        element: <AuthPage />,
+    },
+};
+
+export const privateRouteConfig: Record<PrivateAppRoutes, RouteProps> = {
+    [PrivateAppRoutes.MAIN]: {
+        path: PrivateRoutePath.main,
         element: <MainPage />,
     },
-    [AppRoutes.ABOUT]: {
-        path: RoutePath.about,
-        element: <AboutPage />,
-    },
-    [AppRoutes.NOT_FOUND]: {
-        path: RoutePath.not_found,
+    [PrivateAppRoutes.NOT_FOUND]: {
+        path: PrivateRoutePath.not_found,
         element: <NotFoundPage />,
     },
 };

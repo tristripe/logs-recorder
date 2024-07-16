@@ -1,0 +1,21 @@
+.inputWrapper {
+    input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 7px 14px;
+        background: #fff;
+        border: 1px solid #ced4da;
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 38px;
+        appearance: none;
+        outline: none;
+        transition: all 0.3s;
+        width: 100%;
+
+        &:focus {
+            border-color: #6a41b2;
+        }
+    }
+}

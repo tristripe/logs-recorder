@@ -1,0 +1,48 @@
+.otherParams {
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    gap: 32px;
+    align-items: flex-start;
+
+    &__settings {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .datePickerWrapper {
+        display: flex;
+        column-gap: 16px;
+        justify-content: space-between;
+
+        input {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            padding: 7px 14px;
+            background: #fff;
+            border: 1px solid #ced4da;
+            box-sizing: border-box;
+            border-radius: 4px;
+            height: 38px;
+            appearance: none;
+            outline: none;
+            transition: all 0.3s;
+
+            &:focus {
+                border-color: #6a41b2;
+            }
+        }
+    }
+
+    .dateLabel {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6e768e;
+        margin: 0 0 8px;
+        display: block;
+    }
+}

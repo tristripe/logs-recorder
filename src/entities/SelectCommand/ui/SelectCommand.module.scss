@@ -1,0 +1,22 @@
+.selectCommand {
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    gap: 32px;
+    align-items: flex-start;
+
+    .title {
+        margin: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+}
+
+.commandsList {
+    display: flex;
+    column-gap: 6px;
+    flex-wrap: wrap;
+}
