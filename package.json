@@ -12,8 +12,8 @@
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -b master -d build"
+    "predeploy" : "npm run build:prod",
+    "deploy" : "gh-pages -b master -d dist"
   },
   "keywords": [],
   "author": "",
